@@ -1,7 +1,13 @@
+import Link from "next/link";
 
+type INavBarItemProps = {
+  pageLink: string;
+  pageName: string;
+};
 
-export default function NavBarItem() {
+export default function NavBarItem(props:INavBarItemProps) {
   return (
-    <div className="">NavBarItem</div>
+    <Link href={props.pageLink}>{props.pageName}</Link>
+    
   )
 }
