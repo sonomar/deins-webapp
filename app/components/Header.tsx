@@ -8,7 +8,7 @@ export default function Header() {
   const { theme, changeTheme } = useContext(ThemeContext);
   return (
     <div className="navbar  justify-between bg-base-100">
-      <a className="btn btn-ghost text-xl"><Link href ='/'>Mandala</Link></a>
+      <Link className="btn btn-ghost text-xl" href ='/'>Mandala</Link>
       <div className="flex justify-end gap-5">
         {theme === "dark" ? (
           <svg
