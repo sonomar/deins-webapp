@@ -34,7 +34,7 @@ export default function RootLayout({
               </div>
               <NavBar />
             </div>
-            {children}
+            <div className='h-screen'>{children}</div>
           </ClientThemeWrapper>
         </ThemeProvider>
       </body>
