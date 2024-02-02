@@ -33,6 +33,11 @@ export const ThemeProvider = ({ children }: any) => {
     setIsMounted(true);
     const storedTheme = localStorage.getItem("theme") || "dark";
     setTheme(storedTheme);
+
+    return () => {
+      console.log("theme loaded");
+    };
+
   }, []);
 
   if (!isMounted) {
