@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { ThemeContext } from "../context/ThemeContext";
 import { ConnectWalletButton } from "./ConnectWalletButton";
 import { useContext } from "react";
@@ -7,7 +8,7 @@ export default function Header() {
   const { theme, changeTheme } = useContext(ThemeContext);
   return (
     <div className="navbar  justify-between bg-base-100">
-      <a className="btn btn-ghost text-xl">Mandala</a>
+      <a className="btn btn-ghost text-xl"><Link href ='/'>Mandala</Link></a>
       <div className="flex justify-end gap-5">
         {theme === "dark" ? (
           <svg
