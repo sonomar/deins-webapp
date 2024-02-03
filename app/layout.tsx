@@ -28,7 +28,7 @@ export default function RootLayout({
             <div className="drawer header">
               <input id="my-drawer" type="checkbox" className="drawer-toggle" />
               <div className="drawer-content flex justify-between">
-                <label htmlFor="my-drawer">
+                <label htmlFor="my-drawer" className="pl-3">
                   <TfiAlignJustify size={30} />
                 </label>
               </div>
