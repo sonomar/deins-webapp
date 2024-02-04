@@ -1,3 +1,5 @@
+import UserAccount from '@/app/components/web3Components/UserAccount'
+import SignMessage from '@/app/components/web3Components/signMessage'
 import React from 'react'
 
 export default function Settings() {
@@ -5,6 +7,8 @@ export default function Settings() {
     <>
     <div className='flex-center'>Settings</div>
     <div></div>
+    <UserAccount />
+    <SignMessage/>
     </>
   )
 }

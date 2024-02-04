@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function Home() {
   return (
     <>
-    <div className='text-center'>Home</div>
-    <div></div>
+      <div className="text-center">Home</div>
+      <div></div>
     </>
-  )
+  );
 }

@@ -1,6 +1,5 @@
 "use client";
 import { createContext, useState, useEffect, Dispatch, SetStateAction } from "react";
-import { MetaMaskProvider } from "@metamask/sdk-react";
 
 
 interface IThemeContextType {
@@ -50,10 +49,8 @@ export const ThemeProvider = ({ children }: any) => {
     return theme;
   };
   return (
-    <MetaMaskProvider debug={false} sdkOptions={sdkOptions}>
       <ThemeContext.Provider value={{ theme, changeTheme }}>
         {children}
       </ThemeContext.Provider>
-    </MetaMaskProvider>
   );
 };
