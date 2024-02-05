@@ -7,8 +7,6 @@ export default function Settings() {
     <>
     <div className='flex-center'>Settings</div>
     <div></div>
-    <UserAccount />
-    <SignMessage/>
     </>
   )
 }
