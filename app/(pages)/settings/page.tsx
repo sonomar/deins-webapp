@@ -5,8 +5,7 @@ import React from 'react'
 export default function Settings() {
   return (
     <>
-    <div className='flex-center'>Settings</div>
-    <div></div>
+    <h2 className="text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Settings</h2>
     </>
   )
 }
