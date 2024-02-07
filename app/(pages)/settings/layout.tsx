@@ -1,3 +1,5 @@
+import SettingsHeader from "@/app/components/Headers/SettingsHeader";
+
 export default function SettingsLayout({
   children,
 }: {
@@ -5,6 +7,7 @@ export default function SettingsLayout({
 }) {
   return (
     <div>
+      <SettingsHeader />
       <section>{children}</section>
     </div>
   );
