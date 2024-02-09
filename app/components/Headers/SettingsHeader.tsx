@@ -9,9 +9,9 @@ export default function SettingsHeader() {
   const [activeTab, setActiveTab] = useState(1);
 
   const content = [
-    { title: "Tab 1 Content", content: "This is the content of tab 1" },
-    { title: "Tab 2 Content", content: "This is the content of tab 2" },
-    { title: "Tab 3 Content", content: "This is the content of tab 3" },
+    { title: "General", content: "This is the content of tab 1" },
+    { title: "Web3", content: "This is the content of tab 2" },
+    { title: "Permission Management", content: "This is the content of tab 3" },
   ];
 
   return (

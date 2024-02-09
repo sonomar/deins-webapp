@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="navbar  justify-between bg-base-100">
       <Link className="btn btn-ghost text-xl fill-current" href="/">
-        <Image src="mandala.svg" alt="Company logo" width="50" height="50" />
+        <Image src="/mandala.svg" alt="Company logo" width="50" height="50" />
       </Link>
       <div className="flex justify-end gap-5">
         {theme === "dark" ? (
