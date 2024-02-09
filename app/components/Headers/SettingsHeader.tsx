@@ -5,14 +5,26 @@ import { useContext } from "react";
 import React, { useState } from "react";
 import Link from "next/link";
 
-export default function SettingsHeader({children}: any) {
+export default function SettingsHeader({ children }: any) {
   const { theme, changeTheme } = useContext(ThemeContext);
   const [activeTab, setActiveTab] = useState(1);
 
   const content = [
-    { title: "General", content: "This is the content of tab 1", link: "/Settings/General" },
-    { title: "Web3", content: "This is the content of tab 2", link: "/Settings/Web3" },
-    { title: "Permission Management", content: "This is the content of tab 3", link: "/Settings/Permissions" },
+    {
+      title: "General",
+      content: "This is the content of tab 1",
+      link: "/Settings/General",
+    },
+    {
+      title: "Web3",
+      content: "This is the content of tab 2",
+      link: "/Settings/Web3",
+    },
+    {
+      title: "Permission Management",
+      content: "This is the content of tab 3",
+      link: "/Settings/Permissions",
+    },
   ];
 
   return (
@@ -33,15 +45,19 @@ export default function SettingsHeader({children}: any) {
               }`}
             >
               <Link href={item.link}>
-              <button onClick={() => setActiveTab(index + 1)}>
-                {item.title}
-              </button>
+                <button onClick={() => setActiveTab(index + 1)}>
+                  {item.title}
+                </button>
               </Link>
             </li>
           ))}
         </ul>
         <div>{content[activeTab - 1].content}</div>
         <div>{children}</div>
+        <div className="flex justify-center gap-8">
+          <button className="btn btn-outline btn-error">Cancel</button>
+          <button className="btn btn-outline btn-success">Save</button>
+        </div>
       </section>
     </>
   );
