@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 export default function SettingsHeader({ children }: any) {
-  const { theme, changeTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const [activeTab, setActiveTab] = useState(1);
 
   const content = [
@@ -46,7 +46,7 @@ export default function SettingsHeader({ children }: any) {
             >
               <Link href={item.link}>
                 <button onClick={() => setActiveTab(index + 1)}>
-                  {item.title}
+                  <p className={theme === 'dark' ? "text-white" : "text-black"}>{item.title}</p>
                 </button>
               </Link>
             </li>
