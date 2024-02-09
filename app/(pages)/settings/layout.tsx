@@ -7,8 +7,7 @@ export default function SettingsLayout({
 }) {
   return (
     <div>
-      <SettingsHeader />
-      <section>{children}</section>
+      <SettingsHeader>{children}</SettingsHeader>
     </div>
   );
 }
