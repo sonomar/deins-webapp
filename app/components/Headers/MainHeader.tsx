@@ -1,13 +1,16 @@
 "use client";
 import Link from "next/link";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import { useContext } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const { theme, changeTheme } = useContext(ThemeContext);
   return (
     <div className="navbar  justify-between bg-base-100">
-      <Link className="btn btn-ghost text-xl" href ='/'>Mandala</Link>
+      <Link className="btn btn-ghost text-xl fill-current" href="/">
+        <Image src="/mandala.svg" alt="Company logo" width="50" height="50" />
+      </Link>
       <div className="flex justify-end gap-5">
         {theme === "dark" ? (
           <svg

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import { TfiAlignJustify } from "react-icons/tfi";
-import Header from "./components/Header";
+import Header from "./components/Headers/MainHeader";
 import { ThemeProvider } from "./context/ThemeContext";
 import ClientThemeWrapper from "./context/ClientThemeWrapper";
 
@@ -47,7 +47,7 @@ export default function RootLayout({
                 </div>
                 <NavBar />
               </div>
-              <div className="h-screen">{children}</div>
+              <div className="h-screen text-center">{children}</div>
             </ClientThemeWrapper>
           </ThemeProvider>
         </ContextProvider>
