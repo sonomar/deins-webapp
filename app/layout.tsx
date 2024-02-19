@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar/NavBar";
+import NavBar from "./_components/NavBar/NavBar";
 import { TfiAlignJustify } from "react-icons/tfi";
-import Header from "./components/Headers/MainHeader";
+import Header from "./_components/Headers/MainHeader";
 import { ThemeProvider } from "./context/ThemeContext";
 import ClientThemeWrapper from "./context/ClientThemeWrapper";
 
