@@ -42,7 +42,7 @@ export default function SettingsHeader({ children }: any) {
                 activeTab === index + 1
                   ? "text-blue-600 border-b-2 border-blue-600"
                   : ""
-              } ${theme === 'dark' ? "hover:bg-violet-400" : "hover:bg-slate-100"} `}
+              } ${theme === 'dark' ? "hover:bg-gray-600" : "hover:bg-slate-100"} `}
             >
               <Link href={item.link}>
                 <button onClick={() => setActiveTab(index + 1)}>
