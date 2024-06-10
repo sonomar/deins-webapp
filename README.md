@@ -35,20 +35,16 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
-
-
 ## Commands
 
 - Create next app -> npm create next-app
 - Run the code locally -> npm run dev
-- Install env ->  npm install dotenv --save
+- Install env -> npm install dotenv --save
 - Install Web3Modal -> npm install @web3modal/wagmi@4.0.0-alpha.3 wagmi viem @tanstack/react-query
-- Install node -> nvm install node   
+- Install node -> nvm install node
 - Install shadcn -> npx shadcn-ui@latest init
 - Install shadcn button -> npx shadcn-ui@latest add button
 - Install shadcn popover -> npx shadcn-ui@latest add popover
-- Install react Icons ->  npm install react-icons --save
-- Install DaisyUI ->  npm i -D daisyui@latest
-
-- Prisma ->  npx prisma generate   npx prisma migrate dev --name uteInfo   npx prisma db migrate   npx prisma db seed   
+- Install react Icons -> npm install react-icons --save
+- Install DaisyUI -> npm i -D daisyui@latest
+- add Kysely db schema and types directly from pg-db -> npx kannel
