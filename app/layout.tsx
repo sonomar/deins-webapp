@@ -21,12 +21,14 @@ export const metadata: Metadata = {
   description: "made by Ankit",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const initialState = cookieToInitialState(config, headers().get("cookie"));
+export default async function RootLayout(
+  {
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>
+) {
+  const initialState = cookieToInitialState(config, (await headers()).get("cookie"));
   return (
     <html lang="en">
       <body className={inter.className}>
